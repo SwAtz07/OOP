@@ -30,7 +30,7 @@ int main()
 		{
 			case 1:
 				{
-					s[k].getdata();
+					s[k].read();
 					k++;
 				}
 				break;
@@ -51,13 +51,13 @@ int main()
 					cin>>temp;
 					for(i=0;i<k;i++)
 					{
-						if(s[i].code==temp)
+						if(s[i].codeno==temp)
 						{
 							for(j=i;j<k;j++)
 							{
 						
-								s[j].code=e[j+1].code;
-								s[j].price=e[j+1].price;
+								s[j].codeno=s[j+1].codeno;
+								s[j].price=s[j+1].price;
 								k--;
 							}
 							break;
@@ -68,7 +68,7 @@ int main()
 			default:cout<<"\nWrong choice";
 		}
 		cout<<"Do you want to continue:";
-		cin>>a;
+		cin>>y;
 	}while(y==1);
 	return 0;
 }
