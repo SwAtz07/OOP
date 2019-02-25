@@ -2,9 +2,10 @@
 using namespace std;
 class Shop
 {
-	int codeno;
-	float price;
+	
 	public:
+		int codeno;
+		float price;
 		void read()
 		{
 			cout<<"Enter the code:";
